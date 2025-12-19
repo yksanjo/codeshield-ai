@@ -91,6 +91,31 @@ This is for:
 - **Organizations** adopting AI coding tools at scale
 - **Mid-market companies** who can't afford $200K+ enterprise security tools
 
+## Target Segments
+
+### Banks Accelerating Software Development
+**Why We Fit**: Using AI coding tools to move faster, but need security validation.
+
+**Positioning**: "Veracode tells you what's wrong. We fix it. With AI."
+
+### Fintech Startups
+**Why We Fit**: Fast-moving, using AI coding tools, need modern security.
+
+**Positioning**: "Scale-up security. Start small, grow with us."
+
+### Mid-Market Organizations
+**Why We Fit**: Can't afford $200K+ enterprise tools, but need AI code security.
+
+**Positioning**: "Enterprise-grade AI code security at mid-market prices."
+
+## Our Competitive Advantages
+
+1. **AI Code Patterns**: Understands how AI tools write code and what mistakes they make
+2. **Real-Time Integration**: Works in your IDE and CI/CD, not just batch scans
+3. **Banking-Specific Rules**: Pre-configured for financial services (PCI-DSS, GLBA)
+4. **10x Faster**: Analysis completes in <30 seconds, not hours
+5. **Developer-Friendly**: Doesn't slow down your workflow
+
 ## Current Status
 
 This is an open-source project in active development. We're building this in public because we believe developers need better security tools for AI-generated code.
