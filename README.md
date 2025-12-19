@@ -2,62 +2,65 @@
 
 > Secure Development Gateway for AI-Generated Code
 
-[![License](https://img.shields.io/badge/license-Proprietary-blue.svg)](LICENSE)
-[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](product-specification.md)
+## What This Is
 
-## 🎯 Overview
+CodeShield AI is an open-source security tool that validates and secures code produced by AI coding assistants (like GitHub Copilot, ChatGPT Code Interpreter, etc.). It sits in your development pipeline and checks AI-generated code before it reaches production.
 
-CodeShield AI is part of the **Agentic AI Security Suite for Financial Institutions** - a comprehensive platform designed to prevent agentic AI financial disruption in 2026.
+## The Current Landscape
 
-## 📚 Documentation
+Developers are using AI coding tools everywhere now. They're incredibly helpful - they can write code faster, suggest solutions, and help with repetitive tasks. But here's the thing: AI tools can suggest code with security vulnerabilities, hardcoded secrets, or dependencies with known exploits.
 
-- **[Product Specification](product-specification.md)** - Complete product documentation
-- **[Suite Overview](../README_FINANCIAL_INSTITUTIONS.md)** - Full suite documentation for G-SIBs
-- **[Quick Reference](../QUICK_REFERENCE_G-SIBs.md)** - Executive summary
+Traditional code review tools weren't designed for AI-generated code. They look for patterns that humans might write, but AI code has its own quirks and potential issues. Plus, when AI tools are used by hundreds of developers, one bad suggestion can spread quickly.
 
-## 🏦 Target Institutions
+We're at a point where AI coding tools are becoming standard, but the security tooling around them is still catching up. CodeShield AI is our attempt to bridge that gap.
 
-This product is designed for **Global Systemically Important Banks (G-SIBs)**:
+## Why We Built This
 
-- JPMorgan Chase & Co.
-- Morgan Stanley
-- Bank of America
-- Citigroup Inc.
-- Goldman Sachs
-- Wells Fargo
-- U.S. Bancorp
-- Other G-SIBs globally
+We built CodeShield AI because we saw developers adopting AI coding tools faster than security teams could keep up. Rather than telling people not to use these tools (which isn't realistic), we wanted to make it safer to use them.
 
-## 🚀 Quick Start
+By open-sourcing this:
+- **Developers can use AI tools confidently** - Knowing their code is being checked
+- **Security teams get visibility** - They can see what AI tools are being used and what risks they introduce
+- **The community can improve it** - More eyes on the code means better detection
+- **Smaller teams can benefit** - Not everyone can afford expensive security tools
 
-1. **Review** the [Product Specification](product-specification.md)
-2. **Schedule** an executive briefing
-3. **Request** a technical assessment
-4. **Begin** proof-of-concept discussion
+This is about making AI-assisted development safer, not stopping it.
 
-## 💰 Pricing
+## What CodeShield AI Does
 
-### Starter Edition
-Starting at $75K-200K/year depending on product
+CodeShield AI analyzes every piece of AI-generated code before it gets merged. It checks for:
+- Security vulnerabilities (like SQL injection, XSS, etc.)
+- Hardcoded secrets (API keys, passwords, tokens)
+- Vulnerable dependencies (packages with known CVEs)
+- Code quality issues
+- Banking-specific security patterns
 
-### Professional Edition
-Starting at $250K-600K/year
+It integrates with your existing CI/CD pipeline (GitHub Actions, GitLab CI, Jenkins, etc.) and can block merges if it finds critical issues. It also generates reports so you can see trends over time.
 
-### Enterprise Edition
-$750K-3M/year (custom pricing for G-SIBs)
+## Who This Is For
 
-### PE Portfolio License
-Custom pricing for portfolio-wide deployment
+This is for:
+- **Developers** using AI coding tools who want to write secure code
+- **Security teams** trying to understand risks from AI-generated code
+- **DevOps teams** setting up secure development pipelines
+- **Organizations** adopting AI coding tools at scale
 
-## 📋 Features
+## Current Status
 
-See [Product Specification](product-specification.md) for complete feature list.
+This is an open-source project in active development. We're building this in public because we believe developers need better security tools for AI-generated code.
 
-## 🔗 Related Products
+## Getting Started
 
-This product is part of a 10-product suite:
+1. Check out the [product specification](product-specification.md) for detailed technical information
+2. Review the [Cursor AI prompts](CURSOR_AI_PROMPTS_COMPLETE.md) if you want to build your own version
+3. Read the [executive brief](EXECUTIVE_BRIEF.md) for a high-level overview
+4. Contribute, fork, or use this however it helps you
 
-1. [AgentGuard](../agentguard) - Unified AI Agent Security
+## Related Projects
+
+This is part of a suite of 10 open-source tools for AI agent security in finance:
+
+1. [AgentGuard](../agentguard) - Unified AI Agent Security & Governance
 2. [CodeShield AI](../codeshield-ai) - Secure Development Gateway
 3. [PaymentSentinel](../paymentsentinel) - Real-Time Transaction Defense
 4. [LegacyBridge](../legacybridge-ai-gateway) - Legacy Core Protection
@@ -68,16 +71,25 @@ This product is part of a 10-product suite:
 9. [SupplyChainGuard](../supplychainguard) - Development Tool Security
 10. [ComplianceIQ](../complianceiq) - Regulatory Reporting
 
-## 📞 Contact
+## Contributing
 
-- **Enterprise Sales**: [Contact Information]
-- **Technical Assessment**: [Contact Information]
-- **Regulatory Advisory**: [Contact Information]
+We welcome contributions! Whether it's:
+- Bug reports
+- Feature suggestions
+- Code improvements
+- Documentation fixes
+- New vulnerability patterns to detect
 
-## 📄 License
+Everything helps make these tools better for everyone.
 
-Proprietary - Enterprise License Required
+## License
+
+MIT License - Use it however you want.
+
+## Disclaimer
+
+This is open-source software provided as-is. Use at your own risk. We're not responsible for any losses or damages. This is a community project, not a commercial product.
 
 ---
 
-**Part of the Agentic AI Security Suite - Purpose-Built for G-SIBs**
+**Built with the hope that open collaboration can make AI-assisted development safer for everyone.**
