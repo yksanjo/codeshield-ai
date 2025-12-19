@@ -2,6 +2,8 @@
 
 > Secure Development Gateway for AI-Generated Code
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub stars](https://img.shields.io/github/stars/yksanjo/codeshield-ai?style=social)](https://github.com/yksanjo/codeshield-ai/stargazers) [![GitHub forks](https://img.shields.io/github/forks/yksanjo/codeshield-ai.svg)](https://github.com/yksanjo/codeshield-ai/network/members) [![GitHub issues](https://img.shields.io/github/issues/yksanjo/codeshield-ai.svg)](https://github.com/yksanjo/codeshield-ai/issues) [![Last commit](https://img.shields.io/github/last-commit/yksanjo/codeshield-ai.svg)](https://github.com/yksanjo/codeshield-ai/commits/main)
+
 ## What This Is
 
 CodeShield AI is an open-source security tool that validates and secures code produced by AI coding assistants (like GitHub Copilot, ChatGPT Code Interpreter, etc.). It sits in your development pipeline and checks AI-generated code before it reaches production.
